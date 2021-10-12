@@ -211,7 +211,7 @@ Model ini menggunakan gaussian method untuk membentuk suatu cluster.
 * **Part01-Cleaning-Data.ipynb**: Notebook file yang berisi bagaimana cara kami merge data, handling missing value, handling duplicate value, casting data type, handling inconsisten variable, dan save data menjadi dataset baru
 * **Part02-EDA.ipynb**: Notebook file yang berisi EDA kami dan beberapa feature engineering untuk mendapatkan feature transaksi behavior dari seorang customer
 * **Part03-Methodology(Data Analytics).ipynb**: Notebook file yang berisi Descriptive dan Inferential Analysis dari perusahaan *Olist*
-* **Part04-Modeling.ipynbg**: Notebook file yang berisi model-model untuk *customer segmentation*
+* **Part04-Modeling_RFM.ipynb**: Notebook file yang berisi model-model untuk *customer segmentation*
 
 [(Back to top)](#table-of-contents)
    
