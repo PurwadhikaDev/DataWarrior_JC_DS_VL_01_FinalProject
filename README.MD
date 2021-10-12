@@ -1,7 +1,7 @@
 # Olist Customer Segmentation Based on Customer Behavior
 Team Members:
-**Muhammad Ariq Buddipraja** (muhammad.ariq15@gmail.com)
-**Rendi Salim** (rendisalim10@gmail.com)
+* **Muhammad Ariq Buddipraja** (muhammad.ariq15@gmail.com)
+* **Rendi Salim** (rendisalim10@gmail.com)
 
 ## Table of Contents
 * [Introduction](#introduction)
@@ -18,21 +18,11 @@ Project ini mengenai analisa dan customer segmentation berdasarkan transaksi beh
 ### Background:
 Pada era teknologi saat ini, bisnis *E-commerce* merupakan hal umum yang dapat ditemukan. *E-commerce* sendiri adalah model bisnis yang memungkinkan sebuah perusahaan atau individu bisa membeli atau menjual produknya melalui internet. Pengguna *E-commerce* dari tiap tahunnya juga mengalami kenaikan, khususnya untuk negara Brazil. Berikut data pengguna *E-commerce* dari tahun 2017 - 2025.
 
-<p> <p>
-<figure>
-  <center><img src = "https://cdn.statcdn.com/Statistic/250000/251659-blank-754.png" alt = "Tren pengguna E-commerce di brazil" width = 300; height = 300></center>
-  <figcaption align = "center">Gambar 1. Data Pengguna <em>E-commerce</em> di Brazil dari tahun 2017 - 2025</figcaption>
-</figure>
-<p> <p>
+![Tren_E-commerce_Brazil](https://cdn.statcdn.com/Statistic/250000/251659-blank-754.png)
 
 Di dalam *E-commerce*, salah satu model bisnis yang dapat ditemukan adalah *marketplace*. *Marketplace* adalah model bisnis yang menyediakan tempat bertemunya seorang penjual dan pembeli. Salah satu contoh *marketplace* yang berada di Brazil adalah *Olist*. 
 
-<p> <p>
-<figure>
-  <center><img src = "https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/h8ccwg5vhjcoqu1qfuwv" alt ="Olist logo" width = 200; height = 200></center>
-  <figcaption align = "center">Gambar 2. Perusahaan <em>Olist</em> </figcaption>
-</figure>
-<p> <p>
+![Olist_Logo](https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/h8ccwg5vhjcoqu1qfuwv)
 
 *Revenue* dari model bisnis *marketplace* bisa berasal dari fitur berbayar, iklan, payment gateway, dan partnership. Intinya semakin banyak *user* atau *trafic* pada suatu *marketplace* maka revenue yang didapatkan juga akan semakin banyak. Salah satu cara agar *user* atau *traffic* pada sebuah *marketplace* mengalami kenaikan adalah dengan adalah dengan melakukan *Marketing Campaign*, seperti pemberian *discount*, *copywriting*, dan lainnya. Pada umumnya, perusahaan menyiapkan budget sebesar 5%-12% dari total *revenue* yang didapatkan untuk melakukan *marketing campaign*. Namun, masalah yang terjadi adalah *marketing campaign* yang dilakukan tidak tepat sasaran sehingga perusahaan mengalami kerugian. Sebuah *marketing campaign* dapat dikatakan sukses bukan hanya diukur berdasarkan berapa banyak *user* baru yang berhasil didapatkan, melainkan juga berapa banyak *user* lama yang berhasil dipertahankan agar tetap menggunakan *marketplace* tersebut.  
 <p> <p>
@@ -53,12 +43,8 @@ Untuk mengatasi hal tersebut, salah satu cara yang dapat dilakukan adalah melaku
 
 ## Data Understanding:
 Berdasarkan *Problem Statement* yang ada di atas, kami akan menyelesaikan masalah yang dimiliki sebuah perusahaan *E-commerce* di Brazil, yaitu perusahaan *Olist*. Data ini diambil dari tahun 2016 - 2018 dan disebarkan secara public di <a href = "https://www.kaggle.com/olistbr/brazilian-ecommerce">Kaggle</a> pada tahun 2018 bulan September. Data-data yang ada berisi tentang transaksi *customer* dan *seller*. Untuk menyelesaikan masalah tersebut, kami hanya membutuhkan data-data yang berhubungan dengan transaksi *customer* saja karena yang ingin kami lakukan adalah *customer segmentation* yang berguna untuk mengetahui behavior seorang *customer* dalam bertransaksi. 
-<p> <p>
-<figure>
-  <center><img src = "https://i.imgur.com/HRhd2Y0.png" alt ="Scheme Data Table" width = 700; height = 500></center>
-  <figcaption align = "center">Gambar 3. <em>Scheme Data</em> </figcaption>
-</figure>
-<p> <p>
+
+![Scheme_data](https://i.imgur.com/HRhd2Y0.png)
 
 ### Attribute Information:
 ![Attribute Information](Img/attributeinfo.JPG)
@@ -74,7 +60,7 @@ Model yang kami coba ada 3 model, yaitu RFM Segmentation, K-Means, dan Gaussian 
 Pada RFM Segmentation, kami melakukan perhitungan skor segmentasinya dengan cara mengkombinasikan skor dari R, F, dan M menjadi sebuah kombinasi unik dalam bentuk string. Contohnya jika R = 1, F = 1, dan M = 1 maka RFM Segmentation Score nya menjadi 1 + 1 + 1 = 111 dan dari score tersebut kami memberikan segmentasi pada *customer*
 
 #### Hasil dari RFM Segmentation:
-![Model RFM Segmentation](Img/RFMSegmentasi.JPG)
+![Model RFM Segmentation](Img/RFMsegmentasi.JPG)
 
 ### K-Means:
 Dengan menggunakan feature RFM, kami menggunakan algoritma K-Means untuk melakukan *customer segmentation*
