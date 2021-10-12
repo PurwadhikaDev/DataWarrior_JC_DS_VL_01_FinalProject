@@ -14,6 +14,7 @@ Team Members:
     * [RFM Segmentation](#RFM-segmentation)
     * [K-Means Clustering](#k-means)
     * [Gaussian Clustering](#gaussiam)
+* [Business Recommendation](#business-recommendation) 
 * [File Content](#file-content)
 * [Reference](#reference)
 
