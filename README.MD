@@ -13,7 +13,7 @@ Team Members:
 * [Reference](#reference)
 
 ## Introduction:
-Project ini mengenai analisa dan customer segmentation berdasarkan transaksi behavior dari seorang customer
+Project ini mengenai analisa dan customer segmentation berdasarkan behavior transaksi dari seorang customer
 
 ### Background:
 Pada era teknologi saat ini, bisnis *E-commerce* merupakan hal umum yang dapat ditemukan. *E-commerce* sendiri adalah model bisnis yang memungkinkan sebuah perusahaan atau individu bisa membeli atau menjual produknya melalui internet. Pengguna *E-commerce* dari tiap tahunnya juga mengalami kenaikan, khususnya untuk negara Brazil. Berikut data pengguna *E-commerce* dari tahun 2017 - 2025.
@@ -35,7 +35,7 @@ Untuk mengatasi hal tersebut, salah satu cara yang dapat dilakukan adalah melaku
 #### Business Problem Statement for Machine Learning?
 **How to segment customers so we can divide customers based on their shopping behavior?**
 * Value: Customer Segmentation
-* Goals: Devide customers based on their shopping behavior
+* Goals: Divide customers based on their shopping behavior
 
 #### Business Problem Statement for Analytics?
 * Value: Give treatment for each cluster
