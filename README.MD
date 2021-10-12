@@ -188,10 +188,10 @@ Model ini menggunakan gaussian method untuk membentuk suatu cluster.
 | Lost           | Customers yang sudah lama tidak melakukan transaksi, hanya melakukan satu kali transaksi, dan total transaksi sedikit.          | Campaign via e-mail dan meminta feedback. (Reactivation Strategy)                                            |
 
 ## File Content:
-* **Dataset**: Folder yang berisi dataset dari [Kaggle]("https://www.kaggle.com/olistbr/brazilian-ecommerce")
+* **[Dataset](https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/tree/main/Dataset)**: Folder yang berisi dataset dari [Kaggle]("https://www.kaggle.com/olistbr/brazilian-ecommerce")
 * **Img**: Folder yang berisi gambar-gambar dari hasil project ini
-* **data_outlist_clean.csv**: Data gabungan dari dataset
-* **customer.csv**: Data transaksi behavior dari setiap customer
+* **[data_outlist_clean.csv](https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/data_outlist_clean.csv)**: Data gabungan dari dataset
+* **[customer.csv](https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/customer.csv)**: Data transaksi behavior dari setiap customer
 * **[Part01-Data Cleaning](https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/Part01-Cleaning-Data.ipynb)**: Notebook file yang berisi bagaimana cara kami merge data, handling missing value, handling duplicate value, casting data type, handling inconsisten variable, dan save data menjadi dataset baru
 * **[Part02-EDA](https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/Part02-EDA.ipynb)**: Notebook file yang berisi EDA kami dan beberapa feature engineering untuk mendapatkan feature transaksi behavior dari seorang customer
 * **[Part03-Methodology(Data Analytics)](https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/Part03_Methodology(Data_Analytics).ipynb**: Notebook file yang berisi Descriptive dan Inferential Analysis dari perusahaan *Olist*
