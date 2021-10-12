@@ -4,7 +4,7 @@ Team Members:
 * **Rendi Salim** (rendisalim10@gmail.com)
 
 ## Table of Contents
-* [Introduction](#introduction)
+* [Project Description](#project-description)
     * [Background](#background)
     * [Business Problem Statement](#problem-statement)
 * [Data Understanding](#data-understanding)
@@ -12,7 +12,7 @@ Team Members:
 * [File Content](#file-content)
 * [Reference](#reference)
 
-## Introduction:
+## Project Description:
 Project ini mengenai analisa dan customer segmentation berdasarkan behavior transaksi dari seorang customer
 
 ### Background:
