@@ -25,7 +25,7 @@ Project ini menggunakan data transaksi di sebuah e-commerce di Brazil yang diamb
 Pada era teknologi saat ini, bisnis *E-commerce* merupakan hal umum yang dapat ditemukan. *E-commerce* sendiri adalah model bisnis yang memungkinkan sebuah perusahaan atau individu bisa membeli atau menjual produknya melalui internet. Pengguna *E-commerce* dari tiap tahunnya juga mengalami kenaikan, khususnya untuk negara Brazil. Berikut data pengguna *E-commerce* dari tahun 2017 - 2025.
 
 <p align="center">
-  <img src="https://cdn.statcdn.com/Statistic/250000/251659-blank-754.png" alt="Tren_E-commerce_Brazil"/>
+  <img src="https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/Img/e-commerce%20user%20in%20brazil%20(1).png"/>
 </p>
 
 Di dalam *E-commerce*, salah satu model bisnis yang dapat ditemukan adalah *marketplace*. *Marketplace* adalah model bisnis yang menyediakan tempat bertemunya seorang penjual dan pembeli. Salah satu contoh *marketplace* yang berada di Brazil adalah *Olist*. 
