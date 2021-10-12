@@ -92,18 +92,6 @@ Berdasarkan *Problem Statement* yang ada di atas, kami akan menyelesaikan masala
     <td>Setiap baris merepresentasikan harga dari sebuah product yang diorder oleh customer</td>
   </tr>
   <tr>
-    <td>freight_value</td>
-    <td>float64</td>
-    <td>Nilai pengiriman product</td>
-    <td>Setiap baris merepresentasikan nilai pengirim dari sebuah product yang diorder oleh customer. Apabila item lebih dari 1, nilainya dipisah</td>
-  </tr>
-  <tr>
-    <td>product_photo_qty</td>
-    <td>float64</td>
-    <td>Jumlah foto sebuah product</td>
-    <td>Setiap baris merepresentasikan jumlah foto dari sebuah product yang diiklankan</td>
-  </tr>
-  <tr>
     <td>payment_sequential</td>
     <td>float64</td>
     <td>Jumlah payment method</td>
