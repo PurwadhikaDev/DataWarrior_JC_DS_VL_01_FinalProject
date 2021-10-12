@@ -1,6 +1,6 @@
 # Olist Customer Segmentation Based on Customer Behavior
 Team Members:
-* **Muhammad Ariq Buddipraja** (muhammad.ariq15@gmail.com)
+* **Muhammad Ariq Budipraja** (muhammad.ariq15@gmail.com)
 * **Rendi Salim** (rendisalim10@gmail.com)
 
 ## Table of Contents
