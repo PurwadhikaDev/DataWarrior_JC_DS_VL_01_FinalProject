@@ -35,7 +35,7 @@ Untuk mengatasi hal tersebut, salah satu cara yang dapat dilakukan adalah melaku
 #### Business Problem Statement for Machine Learning?
 **How to segment customers so we can divide customers based on their shopping behavior?**
 * Value: Customer Segmentation
-* Goals: Devide customers based on their shopping behavior
+* Goals: Divide customers based on their shopping behavior
 
 #### Business Problem Statement for Analytics?
 * Value: Give treatment for each cluster
@@ -75,8 +75,8 @@ Model ini menggunakan gaussian method untuk membentuk suatu cluster.
 ![Gaussians](Img/Gaussians.JPG)
 
 ## File Content:
-* Dataset: Folder yang berisi dataset dari [Kaggle]("https://www.kaggle.com/olistbr/brazilian-ecommerce")
-* Img: Folder yang berisi gambar-gambar dari hasil project ini
+* **Dataset**: Folder yang berisi dataset dari [Kaggle]("https://www.kaggle.com/olistbr/brazilian-ecommerce")
+* **Img**: Folder yang berisi gambar-gambar dari hasil project ini
 * **data_outlist_clean.csv**: Data gabungan dari dataset
 * **customer.csv**: Data transaksi behavior dari setiap customer
 * **Part01-Cleaning-Data.ipynb**: Notebook file yang berisi bagaimana cara kami merge data, handling missing value, handling duplicate value, casting data type, handling inconsisten variable, dan save data menjadi dataset baru
