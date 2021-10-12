@@ -11,6 +11,9 @@ Team Members:
     * [Business Problem Statement](#business-problem-statement)
 * [Data Understanding](#data-understanding)
 * [Modeling](#modeling)
+    * [RFM Segmentation](#RFM-segmentation)
+    * [K-Means Clustering](#k-means)
+    * [Gaussian Clustering](#gaussiam)
 * [File Content](#file-content)
 * [Reference](#reference)
 
@@ -167,23 +170,36 @@ Dengan menggunakan feature RFM, kami menggunakan algoritma K-Means untuk melakuk
 #### Hasil dari K-Means:
 ![K-Means](Img/KMeans.JPG)
 
-### Gaussians:
+### Gaussian:
 Model ini menggunakan gaussian method untuk membentuk suatu cluster.
 
 #### Hasil dari Gaussians:
 ![Gaussians](Img/Gaussians.JPG)
+
+## Business Recommendation:
+| RFM Segment    | Deskripsi                                                                                                                       | Strategi                                                             |
+|----------------|---------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------|
+| Best           | Customers yang melakukan transaksi baru-baru ini, sering melakukan transaksi, dan mempunyai total transaksi yang paling tinggi. |  Loyalty program/reward point, rekomendasi produk baru, dan penawaran barang eksklusif (Cross / Up Selling Strategy)           |
+| Loyal          | Customers yang melakukan transaksi paling sering.                                                                               |  Loyalty program/reward point dan penawaran barang eksklusif (Cross / Up Selling Strategy)         |
+| Big Spender    | Customers yang mempunya total transaksi paling tinggi.                                                       | Rekomendasi barang eksklusif, penawaran partnership/membership (B2B), dan penawaran pembelian dengan harga grosir (Cross / Up Selling Strategy)                |
+| New            | Customers yang baru-baru ini melakukan transaksi dan baru satu kali melakukan transaksi.                                        | Welcome e-mail untuk membangun reletionship, penawaran loyalty program/reward point, dan voucher diskon (Cross / Up Selling Strategy) |
+| Promising      | Customers yang baru-baru ini melakukan transaksi, serta frekuensi dan total transaksinya diatas rata-rata customers lain.       |  Penawaran terbatas secara rutin, voucher diskon dan cashback via e-mail (Retention Strategy)                       |
+| Lost Potential | Customers yang sudah lama tidak melakukan transaksi, tetapi frekuensi dan total transaksinya diatas rata-rata customers lain.   | Penawaran terbatas secara rutin, voucher diskon dan cashback via e-mail (Retention & Reactivate Stretegies)                   |
+| Lost           | Customers yang sudah lama tidak melakukan transaksi, hanya melakukan satu kali transaksi, dan total transaksi sedikit.          | Campaign via e-mail dan meminta feedback. (Reactivation Strategy)                                            |
 
 ## File Content:
 * **Dataset**: Folder yang berisi dataset dari [Kaggle]("https://www.kaggle.com/olistbr/brazilian-ecommerce")
 * **Img**: Folder yang berisi gambar-gambar dari hasil project ini
 * **data_outlist_clean.csv**: Data gabungan dari dataset
 * **customer.csv**: Data transaksi behavior dari setiap customer
-* **Part01-Cleaning-Data.ipynb**: Notebook file yang berisi bagaimana cara kami merge data, handling missing value, handling duplicate value, casting data type, handling inconsisten variable, dan save data menjadi dataset baru
-* **Part02-EDA.ipynb**: Notebook file yang berisi EDA kami dan beberapa feature engineering untuk mendapatkan feature transaksi behavior dari seorang customer
-* **Part03-Methodology(Data Analytics).ipynb**: Notebook file yang berisi Descriptive dan Inferential Analysis dari perusahaan *Olist*
-* **Part04-Modeling_RFM.ipynb**: Notebook file yang berisi model-model untuk *customer segmentation*
+* **[Part01-Data Cleaning](https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/Part01-Cleaning-Data.ipynb)**: Notebook file yang berisi bagaimana cara kami merge data, handling missing value, handling duplicate value, casting data type, handling inconsisten variable, dan save data menjadi dataset baru
+* **[Part02-EDA](https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/Part02-EDA.ipynb)**: Notebook file yang berisi EDA kami dan beberapa feature engineering untuk mendapatkan feature transaksi behavior dari seorang customer
+* **[Part03-Methodology(Data Analytics)](https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/Part03_Methodology(Data_Analytics).ipynb**: Notebook file yang berisi Descriptive dan Inferential Analysis dari perusahaan *Olist*
+* **[Part04-Modeling](https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/Part04_Modeling.ipynb)**: Notebook file yang berisi model-model untuk *customer segmentation*
 
-[(Back to top)](#table-of-contents)
+Note : 3D Visualization kami menggunakan library Plotly tidak muncul di Github, silakan download notebook kami lalu buka di Jupyeter Notebook/Google Colab untuk melihatnya.
+
+[(Table Of Contents)](#table-of-contents)
    
 ## Reference:
 * <sup>[1]</sup> https://www.invespcro.com/blog/customer-acquisition-retention/
