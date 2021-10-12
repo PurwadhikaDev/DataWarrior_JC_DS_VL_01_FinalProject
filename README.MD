@@ -38,12 +38,12 @@ Untuk mengatasi hal tersebut, salah satu cara yang dapat dilakukan adalah melaku
 
 
 ### Business Problem Statement:
-#### Business Problem Statement for Machine Learning?
+#### Business Problem Statement for Machine Learning
 **How to segment customers so we can divide customers based on their shopping behavior?**
 * Value: Customer Segmentation
 * Goals: Divide customers based on their shopping behavior
 
-#### Business Problem Statement for Analytics?
+#### Business Problem Statement for Analytics
 * Value: Give treatment for each cluster
 * Goals: Increase retention rate customer
 
