@@ -1,28 +1,34 @@
+![Banner](https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/Img/Olist%20(2).png)
+
 # Olist Customer Segmentation Based on Customer Behavior
 Team Members:
-* **Muhammad Ariq Buddipraja** (muhammad.ariq15@gmail.com)
-* **Rendi Salim** (rendisalim10@gmail.com)
+* [**Muhammad Ariq Budipraja**](https://github.com/ariqmuh) - muhammad.ariq15@gmail.com
+* [**Rendi Salim**](https://github.com/Lasrend) - rendisalim10@gmail.com
 
 ## Table of Contents
-* [Introduction](#introduction)
+* [Project Description](#project-description)
     * [Background](#background)
-    * [Business Problem Statement](#problem-statement)
+    * [Business Problem Statement](#business-problem-statement)
 * [Data Understanding](#data-understanding)
 * [Modeling](#modeling)
 * [File Content](#file-content)
 * [Reference](#reference)
 
-## Introduction:
-Project ini mengenai analisa dan customer segmentation berdasarkan transaksi behavior dari seorang customer
+## Project Description:
+Project ini menggunakan data transaksi di sebuah e-commerce di Brazil yang diambil dari [Kaggle](https://www.kaggle.com/olistbr/brazilian-ecommerce/). Tujuan dari proeject ini adalah analisa customer segmentation berdasarkan behavior transaksi dari para customers. Model yang digunakan pada project ini adalah RFM (Recency, Frequency, & Monetary) model, K-Means Clustering, dan Gaussian Clustering. 
 
 ### Background:
 Pada era teknologi saat ini, bisnis *E-commerce* merupakan hal umum yang dapat ditemukan. *E-commerce* sendiri adalah model bisnis yang memungkinkan sebuah perusahaan atau individu bisa membeli atau menjual produknya melalui internet. Pengguna *E-commerce* dari tiap tahunnya juga mengalami kenaikan, khususnya untuk negara Brazil. Berikut data pengguna *E-commerce* dari tahun 2017 - 2025.
 
-![Tren_E-commerce_Brazil](https://cdn.statcdn.com/Statistic/250000/251659-blank-754.png)
+<p align="center">
+  <img src="https://cdn.statcdn.com/Statistic/250000/251659-blank-754.png" alt="Tren_E-commerce_Brazil"/>
+</p>
 
 Di dalam *E-commerce*, salah satu model bisnis yang dapat ditemukan adalah *marketplace*. *Marketplace* adalah model bisnis yang menyediakan tempat bertemunya seorang penjual dan pembeli. Salah satu contoh *marketplace* yang berada di Brazil adalah *Olist*. 
 
-![Olist_Logo](https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/h8ccwg5vhjcoqu1qfuwv)
+<p align="center">
+  <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/h8ccwg5vhjcoqu1qfuwv" alt="Olist Logo"/>
+</p>
 
 *Revenue* dari model bisnis *marketplace* bisa berasal dari fitur berbayar, iklan, payment gateway, dan partnership. Intinya semakin banyak *user* atau *trafic* pada suatu *marketplace* maka revenue yang didapatkan juga akan semakin banyak. Salah satu cara agar *user* atau *traffic* pada sebuah *marketplace* mengalami kenaikan adalah dengan adalah dengan melakukan *Marketing Campaign*, seperti pemberian *discount*, *copywriting*, dan lainnya. Pada umumnya, perusahaan menyiapkan budget sebesar 5%-12% dari total *revenue* yang didapatkan untuk melakukan *marketing campaign*. Namun, masalah yang terjadi adalah *marketing campaign* yang dilakukan tidak tepat sasaran sehingga perusahaan mengalami kerugian. Sebuah *marketing campaign* dapat dikatakan sukses bukan hanya diukur berdasarkan berapa banyak *user* baru yang berhasil didapatkan, melainkan juga berapa banyak *user* lama yang berhasil dipertahankan agar tetap menggunakan *marketplace* tersebut.  
 <p> <p>
@@ -32,12 +38,12 @@ Untuk mengatasi hal tersebut, salah satu cara yang dapat dilakukan adalah melaku
 
 
 ### Business Problem Statement:
-#### Business Problem Statement for Machine Learning?
+#### Business Problem Statement for Machine Learning
 **How to segment customers so we can divide customers based on their shopping behavior?**
 * Value: Customer Segmentation
 * Goals: Divide customers based on their shopping behavior
 
-#### Business Problem Statement for Analytics?
+#### Business Problem Statement for Analytics
 * Value: Give treatment for each cluster
 * Goals: Increase retention rate customer
 
@@ -47,7 +53,100 @@ Berdasarkan *Problem Statement* yang ada di atas, kami akan menyelesaikan masala
 ![Scheme_data](https://i.imgur.com/HRhd2Y0.png)
 
 ### Attribute Information:
-![Attribute Information](Img/attributeinfo.JPG)
+   <table>
+  <tr>
+    <th>Attribute</th>
+    <th>Data Type</th>
+    <th>Description</th>
+    <th>Unit Analysis</th>
+  </tr>
+  <tr>
+    <td>order_id</td>
+    <td>object</td>
+    <td>Unik ID dari order</td>
+    <td>Setiap baris merepresentasikan ID order yang yang muncul ketika customer
+    melakukan order</td>
+  </tr>
+  <tr>
+    <td>order_purchase_stamp</td>
+    <td>datetime64[s]</td>
+    <td>Waktu pembelian customer</td>
+    <td>Setiap baris merepresentasikan waktu ketika customer melakukan order</td>
+  </tr>
+  <tr>
+    <td>order_item_id</td>
+    <td>float64</td>
+    <td>Jumlah barang per-order</td>
+    <td>Setiap baris merepresentasikan jumlah barang yang dibeli customer dalam sekali order</td>
+  </tr>
+  <tr>
+    <td>product_id</td>
+    <td>object</td>
+    <td>ID dari sebuah product</td>
+    <td>Setiap baris merepresentasikan ID dari sebuah product yang diorder oleh customer</td>
+  </tr>
+  <tr>
+    <td>price</td>
+    <td>float64</td>
+    <td>Harga dari sebuah product</td>
+    <td>Setiap baris merepresentasikan harga dari sebuah product yang diorder oleh customer</td>
+  </tr>
+  <tr>
+    <td>payment_sequential</td>
+    <td>float64</td>
+    <td>Jumlah payment method</td>
+    <td>Setiap baris merepresentasikan jumlah metode payment yang dilakukan oleh customer. Customer dapat membayar sebuah transaksi lebih dari 1 metode</td>
+  </tr>
+  <tr>
+    <td>payment_type</td>
+    <td>object</td>
+    <td>Metode pembayaran</td>
+    <td>Setiap baris merepresentasikan metode yang digunakan customer dalam membayar sebuah transaksi</td>
+  </tr>
+  <tr>
+    <td>payment_value</td>
+    <td>float64</td>
+    <td>Nilai Transaksi</td>
+    <td>Setiap baris merepresentasikan nilai transaksi yang harus dibayar customer</td>
+  </tr>
+  <tr>
+    <td>review_score</td>
+    <td>float64</td>
+    <td>Tingkat kepuasan customer</td>
+    <td>Setiap baris merepresentasikan tingkat kepuasan customer dalam bertransaksi, nilainya dari 1 - 5</td>
+  </tr>
+  <tr>
+    <td>customer_unique_id</td>
+    <td>object</td>
+    <td>Unik ID dari customer</td>
+    <td>Setiap baris merepresentasikan ID customer yang melakukan
+    order</td>
+  </tr>
+  <tr>
+    <td>product_category_name_english</td>
+    <td>object</td>
+    <td>Kategori product</td>
+    <td>Setiap baris merepresentasikan nama kategori dari sebuah product dalam Bahasa Inggris</td>
+  </tr>
+  <tr>
+    <td>month_order</td>
+    <td>object</td>
+    <td>Nama bulan order dilakukan</td>
+    <td>Setiap baris merepresentasikan nama bulan dari tanggal pembelian dilakukan</td>
+  </tr>
+  <tr>
+    <td>weekday_order</td>
+    <td>object</td>
+    <td>Nama hari order dilakukan</td>
+    <td>Setiap baris merepresentasikan nama hari dari tanggal pembelian dilakukan</td>
+  </tr>
+  <tr>
+    <td>month_year_order</td>
+    <td>period[M]</td>
+    <td>Tahun dan bulan pembelian</td>
+    <td>Setiap baris merepresentasikan tahun dan bulan dari tanggal pembelian dilakukan</td>
+  </tr>
+</table>
 
 ## Modeling:
 Pada bagian ini, kami feature yang kami gunakan adalah *Recency*, *Frequency*, dan *Monetary* dari *customer*. Ketiga hal tersebut dapat menggambarkan transaksi *behavior* dari seorang *customer*. Arti dari *RFM* sendiri adalah:
@@ -82,8 +181,10 @@ Model ini menggunakan gaussian method untuk membentuk suatu cluster.
 * **Part01-Cleaning-Data.ipynb**: Notebook file yang berisi bagaimana cara kami merge data, handling missing value, handling duplicate value, casting data type, handling inconsisten variable, dan save data menjadi dataset baru
 * **Part02-EDA.ipynb**: Notebook file yang berisi EDA kami dan beberapa feature engineering untuk mendapatkan feature transaksi behavior dari seorang customer
 * **Part03-Methodology(Data Analytics).ipynb**: Notebook file yang berisi Descriptive dan Inferential Analysis dari perusahaan *Olist*
-* **Part04-Modeling.ipynbg**: Notebook file yang berisi model-model untuk *customer segmentation*
+* **Part04-Modeling_RFM.ipynb**: Notebook file yang berisi model-model untuk *customer segmentation*
 
+[(Back to top)](#table-of-contents)
+   
 ## Reference:
 * <sup>[1]</sup> https://www.invespcro.com/blog/customer-acquisition-retention/
 * <sup>[2]</sup> https://www.statista.com/forecasts/251659/e-commerce-users-in-brazil
