@@ -194,7 +194,7 @@ Model ini menggunakan gaussian method untuk membentuk suatu cluster.
 * **[customer.csv](https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/customer.csv)**: Data transaksi behavior dari setiap customer
 * **[Part01-Data Cleaning](https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/Part01-Cleaning-Data.ipynb)**: Notebook file yang berisi bagaimana cara kami merge data, handling missing value, handling duplicate value, casting data type, handling inconsisten variable, dan save data menjadi dataset baru
 * **[Part02-EDA](https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/Part02-EDA.ipynb)**: Notebook file yang berisi EDA kami dan beberapa feature engineering untuk mendapatkan feature transaksi behavior dari seorang customer
-* **[Part03-Methodology(Data Analytics)](https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/Part03_Methodology(Data_Analytics)).ipynb**: Notebook file yang berisi Descriptive dan Inferential Analysis dari perusahaan *Olist*
+* **[Part03-Methodology(Data Analytics)](https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/Part03_Methodology(Data_Analytics))**: Notebook file yang berisi Descriptive dan Inferential Analysis dari perusahaan *Olist*
 * **[Part04-Modeling](https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/Part04_Modeling.ipynb)**: Notebook file yang berisi model-model untuk *customer segmentation*
 
 Note : 3D Visualization kami menggunakan library Plotly tidak muncul di Github, silakan download notebook kami lalu buka di Jupyeter Notebook/Google Colab untuk melihatnya.
