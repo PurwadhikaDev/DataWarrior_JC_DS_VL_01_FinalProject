@@ -1,3 +1,6 @@
+<!-- Add banner here -->
+![Banner](https://github.com/PurwadhikaDev/DataWarrior_JC_DS_VL_01_FinalProject/blob/main/Img/Olist.png)
+
 # Olist Customer Segmentation Based on Customer Behavior
 Team Members:
 * **Muhammad Ariq Budipraja** (muhammad.ariq15@gmail.com)
