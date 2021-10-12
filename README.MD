@@ -135,24 +135,6 @@ Berdasarkan *Problem Statement* yang ada di atas, kami akan menyelesaikan masala
     order</td>
   </tr>
   <tr>
-    <td>customer_zip_code_prefix</td>
-    <td>int64</td>
-    <td>Kode pos dari customer</td>
-    <td>Setiap baris merepresentasikan kode pos dari tempat tinggal customer, namun hanya 5 kode awal</td>
-  </tr>
-  <tr>
-    <td>customer_city</td>
-    <td>object</td>
-    <td>Nama kota dari customer</td>
-    <td>Setiap baris merepresentasikan nama kota tempat tinggal customer</td>
-  </tr>
-  <tr>
-    <td>customer_state</td>
-    <td>object</td>
-    <td>Negara Bagian customer</td>
-    <td>Setiap baris merepresentasikan negara bagian dari tempat tinggal customer</td>
-  </tr>
-  <tr>
     <td>product_category_name_english</td>
     <td>object</td>
     <td>Kategori product</td>
