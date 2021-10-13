@@ -48,7 +48,7 @@ Untuk mengatasi hal tersebut, salah satu cara yang dapat dilakukan adalah melaku
 * Goals: Divide customers based on their shopping behavior
 
 #### Business Problem Statement for Analytics
-**What kind of treatment for each cluster to increase retention rate customer?
+**What kind of treatment for each cluster to increase retention rate customer?**
 * Value: Give treatment for each cluster
 * Goals: Increase retention rate customer
 
